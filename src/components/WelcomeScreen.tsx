@@ -2,7 +2,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
-import { ArrowDown, Circle } from 'lucide-react';
+import { ArrowDown, Compass } from 'lucide-react';
 
 interface WelcomeScreenProps {
   onStartQuiz: () => void;
@@ -15,7 +15,7 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onStartQuiz }) => 
       <nav className="flex items-center justify-between px-6 py-4 bg-white/80 backdrop-blur-sm border-b border-white/20">
         <div className="flex items-center space-x-3">
           <div className="w-8 h-8 rounded-full bg-gradient-to-r from-pathfinder-blue to-pathfinder-purple flex items-center justify-center">
-            <Circle className="w-4 h-4 text-white fill-current" />
+            <Compass className="w-4 h-4 text-white" />
           </div>
           <span className="text-xl font-bold font-poppins bg-gradient-to-r from-pathfinder-blue to-pathfinder-purple bg-clip-text text-transparent">
             PathFinder
@@ -58,7 +58,7 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onStartQuiz }) => 
           <div className="grid md:grid-cols-3 gap-6 mt-16 max-w-5xl mx-auto">
             <Card className="p-6 bg-white/60 backdrop-blur-sm border-white/30 hover:bg-white/80 transition-all duration-300 hover:scale-105">
               <div className="w-12 h-12 bg-gradient-to-r from-pathfinder-blue to-pathfinder-teal rounded-lg flex items-center justify-center mb-4">
-                <Circle className="w-6 h-6 text-white" />
+                <Compass className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-xl font-semibold text-slate-800 mb-2">Smart Assessment</h3>
               <p className="text-slate-600">
@@ -68,7 +68,7 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onStartQuiz }) => 
 
             <Card className="p-6 bg-white/60 backdrop-blur-sm border-white/30 hover:bg-white/80 transition-all duration-300 hover:scale-105">
               <div className="w-12 h-12 bg-gradient-to-r from-pathfinder-purple to-pathfinder-pink rounded-lg flex items-center justify-center mb-4">
-                <Circle className="w-6 h-6 text-white" />
+                <Compass className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-xl font-semibold text-slate-800 mb-2">Career Guidance</h3>
               <p className="text-slate-600">
@@ -78,7 +78,7 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onStartQuiz }) => 
 
             <Card className="p-6 bg-white/60 backdrop-blur-sm border-white/30 hover:bg-white/80 transition-all duration-300 hover:scale-105">
               <div className="w-12 h-12 bg-gradient-to-r from-pathfinder-teal to-pathfinder-orange rounded-lg flex items-center justify-center mb-4">
-                <Circle className="w-6 h-6 text-white" />
+                <Compass className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-xl font-semibold text-slate-800 mb-2">Custom Roadmap</h3>
               <p className="text-slate-600">

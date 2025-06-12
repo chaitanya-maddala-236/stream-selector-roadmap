@@ -1,9 +1,8 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Circle, ArrowDown } from 'lucide-react';
+import { Compass, ArrowDown } from 'lucide-react';
 import { QuizData, Career } from '../pages/Index';
 
 interface RecommendationsPageProps {
@@ -98,7 +97,7 @@ export const RecommendationsPage: React.FC<RecommendationsPageProps> = ({
       <nav className="flex items-center justify-between px-6 py-4 bg-white/80 backdrop-blur-sm border-b border-white/20">
         <div className="flex items-center space-x-3">
           <div className="w-8 h-8 rounded-full bg-gradient-to-r from-pathfinder-blue to-pathfinder-purple flex items-center justify-center">
-            <Circle className="w-4 h-4 text-white fill-current" />
+            <Compass className="w-4 h-4 text-white" />
           </div>
           <span className="text-xl font-bold font-poppins bg-gradient-to-r from-pathfinder-blue to-pathfinder-purple bg-clip-text text-transparent">
             PathFinder
